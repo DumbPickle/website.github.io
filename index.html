@@ -6,7 +6,21 @@
 <title>
     Daniel Yoo
 </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+        <script>
+            
+                $(document).mousemove(function (e) {
+                    setTimeout(() => {
+                        $('.fish').offset({
+                        left: e.pageX,
+                        top: e.pageY + 20
+                        });
+                    }, 100);
+
+            });
+
+        </script>
 </head>
 
 
@@ -38,7 +52,7 @@ My name is Daniel Yoo and I like games!
 </p>
 
 <img src="https://media1.tenor.com/m/zZOt7alSzAMAAAAd/gojo-gojo-satoru.gif">
-
+<img class="fish" src="angryfish.gif" style="width:5%;">
 
 </body>
 
